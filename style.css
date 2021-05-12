@@ -1,0 +1,69 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #313e42;
+}
+
+body .burger {
+  position: absolute;
+  z-index: 100;
+  top: -100px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 20px 1px #7e7e7e;
+          box-shadow: 1px 1px 20px 1px #7e7e7e;
+  cursor: pointer;
+}
+
+body .xIcon {
+  display: none;
+}
+
+body .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  color: white;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+body .showMenu {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+body li {
+  padding: 1rem 0;
+}
+
+body .menuLink {
+  display: inline;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+body .menuLink:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */
